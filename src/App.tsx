@@ -4163,7 +4163,7 @@ const teams = [
     longitude: -95.515,
   },
 ];
-
+//Create welcome header
 function Welcome() {
   return (
     <div>
@@ -4172,7 +4172,10 @@ function Welcome() {
     </div>
   );
 }
-
+function Comp() {
+  return <p>Here is a third Component!</p>;
+}
+//Get information from Json and list it out
 class Team extends React.Component<{
   name: string;
   school: string;
@@ -4191,7 +4194,7 @@ class Team extends React.Component<{
     );
   }
 }
-
+//list out information for all teams
 function TeamList() {
   return (
     <div>
@@ -4201,10 +4204,12 @@ function TeamList() {
     </div>
   );
 }
+//use 3 components in App
 function App() {
   return (
     <div>
       <Welcome />
+      <Comp />
       <TeamList />
     </div>
   );
